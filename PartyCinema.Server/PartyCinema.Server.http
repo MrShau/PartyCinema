@@ -1,0 +1,6 @@
+@PartyCinema.Server_HostAddress = http://localhost:5088
+
+POST {{PartyCinema.Server_HostAddress}}/api/user/reg
+Accept: application/json
+
+###

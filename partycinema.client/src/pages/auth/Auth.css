@@ -1,0 +1,20 @@
+.form-auth input[type="name"] {
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.form-auth input[type="password"] {
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.form-auth div {
+    position: relative;
+}
+
+.form-auth div .input-icon {
+    position: absolute;
+    
+}

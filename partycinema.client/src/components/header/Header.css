@@ -1,0 +1,10 @@
+.brand {
+    width: 335px;
+    left: 0;
+    text-align: center;
+}
+
+.movie-card-image:hover
+{
+    background: red !important;
+}

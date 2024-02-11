@@ -1,0 +1,26 @@
+#root {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.home-main {
+    height: 100%;
+}
+
+.sidebar {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.sidebar-header {
+    flex: 0 1 auto;
+}
+
+.sidebar-content {
+    flex: 1 1 0px;
+
+}
+
+

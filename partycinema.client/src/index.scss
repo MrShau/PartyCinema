@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Mountains+of+Christmas:wght@700&display=swap');
+
+$text-secondary: #6C757D;
+$primary-color: linear-gradient(86deg, #F66061 11%, #F78060 86%);
+$primary-color-hover: linear-gradient(186deg, #F66061 11%, #F78060 86%);
+$primary-color-2: #F66061;
+$white-color: #E2E2E2;
+
+$bg-secondary: #121212;
+
+$border-color: #2b2b2b;
+
+$text-small-fs: 12px;
+$text-secondary-fs: 14px;
+$text-default-fs: 16px;
+$text-primary-fs: 16px;
+
+
+$theme-colors: (
+    'dark': #0F0F0F,
+    'white': #E2E2E2,
+    'light': #E2E2E2,
+    'primary': #F66061,
+    'secondary': #121212
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+    color: map-get($map: $theme-colors, $key: 'white');
+    font-family: 'Montserrat', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: $bg-secondary;
+    border-color: $border-color;
+    border-radius: 15px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $border-color;
+    border-radius: 15px;
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #0F0F0F 17.53%, #141414 106.84%);
+
+    background-attachment: fixed;
+}
+
+.link {
+    color: $white-color;
+}
+
+.link:hover {
+    background: $primary-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-primary {
+    background: $primary-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.fill-primary {
+    fill: $primary-color-2;
+}
+
+.stroke-primary {
+    stroke: $primary-color-2;
+}
+
+.text-secondary {
+    color: $text-secondary !important;
+}
+
+.border,
+.border-bottom,
+.border-right,
+.border-left,
+input {
+    border-color: $border-color !important;
+}
+
+.border-right {
+    border-top-width: 0 !important;
+    border-left-width: 0 !important;
+    border-bottom-width: 0 !important;
+}
+
+.logo{
+    font-family: 'Mountains of Christmas', serif !important;
+    font-weight: 700 !important;
+    font-size: 32px !important;
+}
+
+input[type="search"],
+input[type="search"]:focus,
+input[type="name"],
+input[type="name"]:focus,
+input[type="password"],
+input[type="password"]:focus {
+    background-color: map-get($map: $theme-colors, $key: 'secondary');
+    color: map-get($map: $theme-colors, $key: 'white');
+    font-size: $text-default-fs;
+}
+
+input:focus {
+    box-shadow: 0px 0px 15px #f660607e,
+                0px 0px 5px #f781605f !important;
+}
+
+input[type="search"]::placeholder,
+input[type="name"]::placeholder,
+input[type="password"]::placeholder {
+    color: $text-secondary;
+    font-size: $text-default-fs;
+}
+
+.btn-outline-primary {
+    font-weight: 400;
+    font-size: $text-default-fs;
+    border-width: 1px;
+    transition: all .2s .0s;
+    color: $primary-color-2 !important;
+}
+
+.btn-outline-primary:hover {
+    background-image: $primary-color;
+    color: $white-color !important;
+}
+
+.btn-primary {
+    color: $white-color;
+    background-image: $primary-color;
+    border-color: $primary-color-2;
+    transition: all .2s .0s;
+}
+
+.btn-primary:hover {
+    background-image: $primary-color-hover;
+    color: $white-color;
+}
+
+.bg-transparent{
+    background: transparent;
+}
+.bg-transparent:hover {
+    background: transparent;
+}
+.circle {
+    border-radius: 500px;
+}
+
+hr {
+    background: $border-color !important;
+}
+
+.bg-secondary {
+    background-color: $bg-secondary !important;
+}
+
+.bg-primary {
+    background-image: $primary-color;
+}
+
+.dropdown-item:hover * {
+    color: white !important;
+}
+
+.dropdown-item:active {
+    background: $primary-color !important;
+}
+
+.dropdown-item:active * {
+    stroke: white;
+}
+
+.dropdown-item:active div .user_svg svg * {
+    stroke: white;
+    fill: white;
+}
